@@ -19,6 +19,10 @@ fn main() {
     println!("{:?}", todo_list);
 }
 
+fn complete_item(item: &mut TodoItem) {
+    item.completed = true;
+}
+
 struct TodoItem {
     id: u32,
     name: String,
