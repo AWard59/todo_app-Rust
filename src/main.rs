@@ -23,6 +23,12 @@ fn complete_item(item: &mut TodoItem) {
     item.completed = true;
 }
 
+fn display_items(items: &Vec<TodoItem>) {
+    for item in items {
+        println!("{} - {} ({})", item.id, item.name, item.completed);
+    }
+}
+
 struct TodoItem {
     id: u32,
     name: String,
